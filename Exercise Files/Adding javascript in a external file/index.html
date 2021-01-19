@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An empty page</title>
+    <!-- loading script from the head requires either defer or async tags which have different outcomes -->
+
+    <!-- script can be DEFERED (HTML parsing and JS download happen at the same time but JS exectution only
+        happens once everything else is loaded by adding the defer tag -->
+
+    <script defer src="script.js"></script>
+    </script>
+
+    <!-- script can be ran ASYCHRONOUSLY (meaning HTML and JS download happen symultaneously,rendering of JS block
+        happens only when the script is executed) by addding the async attribute to the script tag. -->
+
+    <!-- 
+        <script async src="script.js"> 
+        </script>
+    -->
+
+</head>
+
+<body>
+
+</body>
+
+<!-- rendering script.js which has the same javascript logic from a different file using the src tag -->
+<!-- we can run it normally (HTML is parsed then JS is downloaded, and then executed) from
+    the body by not including defer or async like so -->
+<!-- 
+    <script src="script.js">
+
+    </script> 
+-->
+
+<!-- this allows you to organize and divide up components easier. -->
+<!-- <script>
+    var date = new Date();
+    document.body.innerHTML = "<h1>Today is: " + date + "</h1>";
+</script> -->
+
+</html>
