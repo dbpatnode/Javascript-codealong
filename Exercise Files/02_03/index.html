@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>An empty page</title>
+    <!--Javascript will not load from the head!!!! below wont work because its in the head-->
+    <!-- <script>
+        const date = new Date();
+        document.body.innerHTML = "<h1> today is :" + date + "<h1>"
+
+    </script> -->
 </head>
 
 <body>
 
 </body>
+
+<!-- it will only render from the body!!!!  -->
+<script>
+    const date = new Date();
+    document.body.innerHTML = "<h1> today is :" + date + "<h1>"
+
+</script>
 
 </html>
