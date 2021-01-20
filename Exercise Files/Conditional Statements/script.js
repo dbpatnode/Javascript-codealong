@@ -1,4 +1,4 @@
-var a = 5;
+var a = 6;
 var b = 5;
 var theNumbersMatch
 
@@ -8,4 +8,5 @@ if ( a == b ) {
     theNumbersMatch = false;
 }
 
-console.log(theNumbersMatch);
+
+console.log("the numbers match ", theNumbersMatch);

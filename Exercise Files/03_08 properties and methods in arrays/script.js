@@ -26,6 +26,8 @@ console.log("Before: ", pens);
 // Find the specified position (pos) and remove n number of items from the array. Arguments: pens.splice(pos,n):
 // pens.splice(pos, n) // Starts at the seccond item and removes two items.
 
+// pens.splice(1, 2)
+
 // console.log("After: ", pens);
 
 // Create a copy of an array. Typically assigned to a new variable:
@@ -36,9 +38,25 @@ console.log("Before: ", pens);
 // var result = pens.indexOf(search, index);
 // console.log("The search result index is: ", result);
 
+    // EXAMPLE
+        // var result = pens.indexOf("green", 0);
+        // console.log("The search result index is: ", result);
+        // console.log("The value is: ", pens[result]);
+
+
 // Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
 // var arrayString = pens.join(separator);
 // console.log("String from array: ", arrayString);
+
+    // EXAMPLE
+        // var arrayString = pens.join();
+        // console.log("String from array: ", arrayString);
+        // // note that there isnt a space between commas, to add that or any other punctuation do this:
+
+        // var arrayString = pens.join(", ");
+        // console.log("String from array with commas and space: ", arrayString);
+
+    
 
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
