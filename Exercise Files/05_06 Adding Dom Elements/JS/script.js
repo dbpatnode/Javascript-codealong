@@ -18,7 +18,7 @@ let newImage= document.createElement("img")
 newImage.setAttribute("src", "https://images-na.ssl-images-amazon.com/images/I/71UfSpR%2B7cL._AC_SL1500_.jpg")
 newImage.setAttribute("alt", "nothing like a good watergun fight")
 
-TOPDIV.append(newImage)
+
 // let captionText= document.createTextNode(altText)
 
 // // placing the alt text as the caption for the images
@@ -28,7 +28,9 @@ TOPDIV.append(newImage)
 // FEATURED.appendChild(captionElement)
 
 captionElement.append(altText)
+
 FEATURED.append(captionElement)
+captionElement.append(newImage)
 
 
 
