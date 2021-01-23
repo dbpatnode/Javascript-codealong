@@ -1,21 +1,29 @@
 const AREA = document.body;
 const CIRCLE = document.querySelector('.circle');
+const CIRCLE2= document.querySelector('.circle2')
 
 
-var windowWidth = window.innerWidth;
-var windowHeight = window.innerHeight;
+let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
 
 function mouseCoordinates(e) {
     // Capture the event object (mouse movement).
     // Get X coordinate (distance from left viewport edge) via clientX property.
     // Take total window width, subtract current coordinate and width of circle.
     // Do the same for Y coordinate (distance from top viewport edge).
-    var horizontalPosition = windowWidth - e.clientX - 26;
-    var verticalPosition= windowHeight - e.clientY - 26;
+    let horizontalPositionCircle1 = windowWidth - e.clientX - 26;
+    let verticalPositionCircle1 = windowHeight - e.clientY - 26;
+
+    let horizontalPositionCircle2 = windowWidth - e.clientX + 10;
+    let verticalPositionCircle2 = windowHeight - e.clientY + 10;
+
 
     // Set horizontal and vertical position.
-    CIRCLE.style.left = horizontalPosition + 'px';
-    CIRCLE.style.top = verticalPosition + 'px';
+    CIRCLE.style.left = horizontalPositionCircle1 + 'px';
+    CIRCLE.style.top = verticalPositionCircle1 + 'px';
+
+    CIRCLE2.style.left = horizontalPositionCircle2 + 'px';
+    CIRCLE2.style.top = verticalPositionCircle2 + 'px';
 }
 
 function changeColorOnTouch() {
