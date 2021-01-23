@@ -12,7 +12,7 @@ CTA.classList.remove("hide")
 BOOKINGALERT.classList.add("hide")
 
 function reveal(e) {
-    //prevents default behavior of link click taking back to the top of page!!!
+    //prevents default behavior of clicking link taking us back to the top of page!!!
     e.preventDefault()
 
     // toggles weather the hide class is attached to .cta a

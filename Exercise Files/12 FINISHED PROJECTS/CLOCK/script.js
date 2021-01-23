@@ -6,6 +6,7 @@ const SECONDHAND = document.querySelector("#second");
 
 // Assigns of numerical amount to how many degrees for use with rotate styling below
 let date = new Date()
+
 let hour = date.getHours()
 let minute = date.getMinutes() 
 let second = date.getSeconds()
