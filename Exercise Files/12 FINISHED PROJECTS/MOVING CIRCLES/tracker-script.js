@@ -14,8 +14,8 @@ function mouseCoordinates(e) {
     let horizontalPositionCircle1 = windowWidth - e.clientX - 26;
     let verticalPositionCircle1 = windowHeight - e.clientY - 26;
 
-    let horizontalPositionCircle2 = windowWidth - e.clientX + 10;
-    let verticalPositionCircle2 = windowHeight - e.clientY + 10;
+    let horizontalPositionCircle2 = windowWidth - e.clientX - 79;
+    let verticalPositionCircle2 = windowHeight - e.clientY + 82
 
 
     // Set horizontal and vertical position.
@@ -29,6 +29,7 @@ function mouseCoordinates(e) {
 function changeColorOnTouch() {
     CIRCLE.style.backgroundColor = "green";
     CIRCLE.style.borderColor = "green";
+
 }
 
 // When the mouse moves, run the mouseCoordinates function.
