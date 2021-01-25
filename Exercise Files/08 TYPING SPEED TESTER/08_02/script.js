@@ -5,7 +5,7 @@ const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
 //create a global variable for starting time that is called in the runTimer method, incremting it every tenth of a second from the start() function (that has the set interval called within it) 
-let timer = 0
+let timer = [0,0,0,0]
 
 
 // Add leading zero to numbers 9 or below (purely for aesthetics):
@@ -16,9 +16,23 @@ let timer = 0
 
 function incrementTimer(){
    
-    // set the inner html to the global variable of timer (which is set to 0). increment it every 10 miliseconds per the start function. 
-    theTimer.innerHTML = timer;
-    timer++;
+    // set the inner html to the global variable of timer (which is set to 0). increment it every 10 militimer[1] per the start function. 
+    
+
+    // sets clock readout out to 0:0:0 using the variables set above
+    let currentTime= timer[0] + ":" + timer[1] + ":" + timer[3]
+
+    // sets the  innerHTM: of the timer string to the current time variable
+    theTimer.innerHTML = currentTime;
+
+    // increments the time of the last 0 in the timer global variable array ????
+    timer[3]++;
+
+    // floor me
+
+    timer[0] = Math.floor((timer[3]/100/60))
+    timer[1] = Math.floor((timer[3]/100) - (timer[0] * 60))
+    timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 600))
 
 }
 
